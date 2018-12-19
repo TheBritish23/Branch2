@@ -11,4 +11,23 @@
     <div class="container">
       <h1>Car insurance</h1>
 
-      <p>To give you a quote, we need to know a little about you:</p>
+      <p>To give you a quote, tell us everything or die!:</p>
+
+      <form id="insurance">
+        <label for="age">Age</label>
+        <input id="age" type="text">
+        <label for="gender">Sex, yes please! (just kidding)</label>
+        <select id="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+
+        <button type="submit" class="btn">Calculate my quote</button>
+      </form>
+
+      <div id="quote">
+        <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
+      </div>
+    </div>
+  </body>
+</html>
